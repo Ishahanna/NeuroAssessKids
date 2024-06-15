@@ -124,7 +124,7 @@ p {
 
 @media (min-width: 550px) {
     .guidance-col {
-        flex-basis: 48%; /* Two columns on larger screens */
+        flex-basis: 40%; /* Two columns on larger screens */
     }
 }
 
