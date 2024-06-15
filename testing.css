@@ -9,8 +9,10 @@
 
 body {
     color: #fff;
-    background: #09001d;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #078e61;
+    overflow-y: scroll;
+    margin: 0; /* Reset default margin */
 }
 
 .header {
@@ -18,8 +20,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10px;
-    background: transparent;
+    padding: 5px;
+    background: #eff5f2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,36 +29,35 @@ body {
 }
 
 .logo {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    margin: 15px;
+    font-size: 2.5vw; /* Responsive font size */
+    color: #fff;
+    margin: 10px;
     text-decoration: none;
     font-weight: 700;
     filter: drop-shadow(0 0 5px #09001d);
 }
 
 .navbar a {
-    font-size: 20px;
+    font-size: 1.5vw; /* Responsive font size */
     color: #000000;
     text-decoration: none;
     font-weight: 400;
-    margin-left: 35px;
-    margin-right: auto;
-    transition: 1s;
+    margin-left: 3vw; /* Responsive margin */
+    transition: 0.5s;
+    padding-right: 15px;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: #28c26b;
+    color: #1eb366;
 }
 
 /* Style for the select element */
 #language-select {
     width: 100px; /* Set the width */
-    margin-left: 35px;
-    margin-right: auto;
-    padding: 2px; /* Add padding for a better appearance */
-    font-size: 16px; /* Increase font size */
+    margin-left: 3vw; /* Responsive margin */
+    padding: 8px; /* Add padding for a better appearance */
+    font-size: 1.2vw; /* Responsive font size */
     border: 2px solid #09001d; /* Border color */
     border-radius: 5px; /* Rounded corners */
     background-color: #f0f0f0; /* Background color */
@@ -119,42 +120,38 @@ body {
 }
 
 .home-content {
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    max-width: 90%; /* Adjusted maximum width for responsiveness */
+    text-align: center; /* Center align text content */
 }
 
 .home-content h4 {
-    font-size: 45px;
+    font-size: 3vw; /* Responsive font size */
     letter-spacing: 1px;
     font-weight: 600;
     color: #2dba8b;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2vh; /* Adjusted margin for spacing */
+    margin-bottom: 2vh; /* Adjusted margin for spacing */
 }
 
 .home-content p {
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
+    font-size: 1.5vw; /* Responsive font size */
     color: #000000;
     text-shadow: 0 0 9px rgba(0, 0, 0, .3);
-    margin-top: 14px;
-    margin-bottom: 20px;
+    margin-top: 2vh; /* Adjusted margin for spacing */
+    margin-bottom: 3vh; /* Adjusted margin for spacing */
     line-height: 1.5;
 }
 
 .home-content .start-btn {
-    width: 190px;
-    height: 55px;
+    width: 30%; /* Responsive width */
+    max-width: 200px; /* Maximum width for large screens */
+    height: auto; /* Adjust height automatically */
     background: #2dba8b;
     border: 2px solid #fff;
     outline: none;
     border-radius: 4px;
     box-shadow: 0 0 10px #2dba8b;
-    font-size: 16px;
+    font-size: 1.2vw; /* Responsive font size */
     color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
@@ -172,11 +169,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(.9);
-    width: 600px;
-    height: 650px;
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Maximum width for large screens */
+    height: auto; /* Adjust height automatically */
     background: #7decc9;
     border-radius: 6px;
-    padding: 20px 25px; /* Increase padding for more space */
+    padding: 2vw 2.5vw; /* Responsive padding */
     opacity: 0;
     pointer-events: none;
     transition: .3s ease;
@@ -196,9 +194,9 @@ body {
 
 .popup-info .info {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.2vw; /* Responsive font size */
     font-weight: 500;
-    margin: 4px 0;
+    margin: 0.8vw 0; /* Responsive margin */
 }
 
 .popup-info .btn-group {
@@ -206,22 +204,22 @@ body {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #fff;
-    margin-top: 10px;
-    padding: 15px 0 7px;
+    margin-top: 1.5vw; /* Responsive margin */
+    padding: 1.5vw 0 0.7vw; /* Responsive padding */
 }
 
 .popup-info .btn-group .info-btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    height: 45px;
+    width: 20%; /* Responsive width */
+    max-width: 130px; /* Maximum width for large screens */
+    height: auto; /* Adjust height automatically */
     background: #14815d;
     border: 2px solid #e9edeb;
     outline: none;
     border-radius: 6px;
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 1.2vw; /* Responsive font size */
     color: #fff;
     font-weight: 600;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -246,28 +244,170 @@ body {
 
 .wrapper {
     background: #fff;
-    width: 100%;
+    width: auto;
     max-width: 600px;
     height: 425px;
     margin: 0 auto;
-}
-
-.popup-info.wrapper {
+    }
+    
+    .popup-info.wrapper {
     background: #09001d;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.popup-info h5 {
+    }
+    
+    .popup-info h5 {
     font-size: 34px;
     text-align: center;
     background: linear-gradient(45deg, transparent, #2bc995, transparent);
     border-radius: 6px;
     margin-top: 80px;
     margin-bottom: 20px;
+    }
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 3vw; /* Adjusted font size for smaller screens */
+    }
+
+    .navbar a {
+        font-size: 2vw; /* Adjusted font size for smaller screens */
+        margin-left: 5vw; /* Adjusted margin for smaller screens */
+    }
+
+    .home-content h4 {
+        font-size: 4vw; /* Adjusted font size for smaller screens */
+    }
+
+    .home-content p {
+        font-size: 2vw; /* Adjusted font size for smaller screens */
+    }
+
+    .home-content .start-btn {
+        font-size: 1.5vw; /* Adjusted font size for smaller screens */
+    }
+
+    .popup-info {
+        font-size: 2vw; /* Adjusted font size for smaller screens */
+    }
+
+    .popup-info .info {
+        font-size: 1.5vw; /* Adjusted font size for smaller screens */
+    }
+
+    .popup-info .btn-group .info-btn {
+        font-size: 1.5vw; /* Adjusted font size for smaller screens */
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 4vw; /* Adjusted font size for mobile screens */
+    }
+
+    .navbar {
+        display: none; /* Hide navbar on smaller screens */
+    }
+
+    .popup-info {
+        max-width: 90%; /* Adjusted maximum width for smaller screens */
+    }
+
+    .popup-info .info {
+        font-size: 3vw; /* Adjusted font size for smaller screens */
+    }
+
+    .popup-info .btn-group .info-btn {
+        font-size: 2vw; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        font-size: 5vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content h4 {
+        font-size: 5vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content p {
+        font-size: 3vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content .start-btn {
+        font-size: 2vw; /* Adjusted font size for very small screens */
+    }
+
+    .popup-info .info {
+        font-size: 3vw; /* Adjusted font size for very small screens */
+    }
+
+    .popup-info .btn-group .info-btn {
+        font-size: 2.5vw; /* Adjusted font size for very small screens */
+    }
+}
+
+/* Responsive styles for smaller tablets */
+@media screen and (max-width: 400px) {
+    .home-content h4 {
+        font-size: 5vw; /* Adjusted font size for smaller tablets */
+    }
+
+    .home-content p {
+        font-size: 3vw; /* Adjusted font size for smaller tablets */
+    }
+
+    .home-content .start-btn {
+        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
+    }
+
+    .popup-info {
+        font-size: 3vw; /* Adjusted font size for smaller tablets */
+    }
+
+    .popup-info .info {
+        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
+    }
+
+    .popup-info .btn-group .info-btn {
+        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
+    }
+}
+
+/* Responsive styles for very small screens */
+@media screen and (max-width: 375px) {
+    .logo {
+        font-size: 6vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content h4 {
+        font-size: 6vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content p {
+        font-size: 4vw; /* Adjusted font size for very small screens */
+    }
+
+    .home-content .start-btn {
+        font-size: 3vw; /* Adjusted font size for very small screens */
+    }
+
+    .popup-info {
+        font-size: 4vw; /* Adjusted font size for very small screens */
+    }
+
+    .popup-info .info {
+        font-size: 3vw; /* Adjusted font size for very small screens */
+    }
+
+    .popup-info .btn-group .info-btn {
+        font-size: 3vw; /* Adjusted font size for very small screens */
+    }
+}
+
 
 #quizForm {
     display: flex;
