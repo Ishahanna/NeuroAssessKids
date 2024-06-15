@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    color: #fff;
+    background: #09001d;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #28c26b;
+}
+
+body {
+    color: #fff;
+    background: #09001d;
+}
+
+.main {
+    min-height: 100vh;
+    background: linear-gradient(rgba(224, 224, 224, 0.505), rgba(218, 218, 218, 0.806)), url('SLIDE\ FYP\ 1.png');
+    background-size: cover;
+    background-position: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+/* Guidance Section */
+.guidance { 
+    width: 85%;
+    margin: auto;
+    text-align: justify;
+    padding: 90px; 
+}
+
+.guidance-content {
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.guidance-content h1 {
+    font-size: 40px; 
+    font-weight: 450px;
+    color: #2dba8b;
+    margin-top: 1px;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    color: #1c1b1b;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 10px;
+    margin-top: 1px;
+}
+
+.row {
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.guidance-col {
+    flex-basis: 49%;
+    background: #69be93;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.guidance-col h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    margin-bottom: 2px;
+}
+
+.guidance-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
