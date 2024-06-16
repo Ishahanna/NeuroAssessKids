@@ -96,7 +96,7 @@ body {
 }
 
 .info-col img {
-    max-width: 50%; /* Ensures images don't overflow their container */
+    max-width: 35%; /* Ensures images don't overflow their container */
     height: auto; /* Maintains aspect ratio */
     justify-items: center;
     border-radius: 10px;
