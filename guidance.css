@@ -46,6 +46,43 @@ body {
     color: #1eb366;
 }
 
+/* Style for the select element */
+#language-select {
+    width: 100px; /* Set the width */
+    margin-left: 3vw; /* Responsive margin */
+    padding: 8px; /* Add padding for a better appearance */
+    font-size: 1.2vw; /* Responsive font size */
+    border: 2px solid #09001d; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f0f0f0; /* Background color */
+    color: #333; /* Text color */
+    appearance: none; /* Remove default styling for better custom styling */
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#language-select::after {
+    content: ''; /* Unicode character for down arrow */
+    font-size: 12px; /* Size of the arrow */
+    color: #333; /* Color of the arrow */
+    position: absolute; /* Position it absolutely */
+    right: 15px; /* Position from the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical position */
+    pointer-events: none; /* Prevent arrow from blocking clicks */
+}
+
+#language-select:hover {
+    border-color: #09001d; 
+}
+
+/* Style for select element on focus */
+#language-select:focus {
+    outline: none;
+}
+
 .main {
     max-width: 100%;
     padding: 10px;
