@@ -250,129 +250,22 @@ body {
     margin: 0 auto;
     }
     
-    .popup-info.wrapper {
+.popup-info.wrapper {
     background: #09001d;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    }
+}
     
-    .popup-info h5 {
+.popup-info h5 {
     font-size: 34px;
     text-align: center;
     background: linear-gradient(45deg, transparent, #2bc995, transparent);
     border-radius: 6px;
     margin-top: 80px;
     margin-bottom: 20px;
-    }
-
-@media screen and (max-width: 768px) {
-    .logo {
-        font-size: 4vw; /* Adjusted font size for mobile screens */
-    }
-
-    .navbar {
-        display: none; /* Hide navbar on smaller screens */
-    }
-
-    .popup-info {
-        max-width: 90%; /* Adjusted maximum width for smaller screens */
-    }
-
-    .popup-info .info {
-        font-size: 3vw; /* Adjusted font size for smaller screens */
-    }
-
-    .popup-info .btn-group .info-btn {
-        font-size: 2vw; /* Adjusted font size for smaller screens */
-    }
 }
-
-@media screen and (max-width: 425px) {
-    .logo {
-        font-size: 5vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content h4 {
-        font-size: 5vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content p {
-        font-size: 3vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content .start-btn {
-        font-size: 2vw; /* Adjusted font size for very small screens */
-    }
-
-    .popup-info .info {
-        font-size: 3vw; /* Adjusted font size for very small screens */
-    }
-
-    .popup-info .btn-group .info-btn {
-        font-size: 2.5vw; /* Adjusted font size for very small screens */
-    }
-}
-
-/* Responsive styles for smaller tablets */
-@media screen and (max-width: 400px) {
-    .home-content h4 {
-        font-size: 5vw; /* Adjusted font size for smaller tablets */
-    }
-
-    .home-content p {
-        font-size: 3vw; /* Adjusted font size for smaller tablets */
-    }
-
-    .home-content .start-btn {
-        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
-    }
-
-    .popup-info {
-        font-size: 3vw; /* Adjusted font size for smaller tablets */
-    }
-
-    .popup-info .info {
-        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
-    }
-
-    .popup-info .btn-group .info-btn {
-        font-size: 2.5vw; /* Adjusted font size for smaller tablets */
-    }
-}
-
-/* Responsive styles for very small screens */
-@media screen and (max-width: 300px) {
-    .logo {
-        font-size: 6vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content h4 {
-        font-size: 6vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content p {
-        font-size: 4vw; /* Adjusted font size for very small screens */
-    }
-
-    .home-content .start-btn {
-        font-size: 3vw; /* Adjusted font size for very small screens */
-    }
-
-    .popup-info {
-        font-size: 4vw; /* Adjusted font size for very small screens */
-    }
-
-    .popup-info .info {
-        font-size: 3vw; /* Adjusted font size for very small screens */
-    }
-
-    .popup-info .btn-group .info-btn {
-        font-size: 3vw; /* Adjusted font size for very small screens */
-    }
-}
-
 
 #quizForm {
     display: flex;
