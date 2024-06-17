@@ -636,3 +636,73 @@ h6 {
     background: #2dba8b;
     border-color: #fff;
 }
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 5vw;
+        margin: 5px;
+    }
+
+    .navbar a {
+        font-size: 4vw;
+        margin-left: 2vw;
+        padding-right: 5px;
+    }
+
+    #language-select {
+        width: 20vw;
+        padding: 5px;
+        font-size: 3vw;
+    }
+
+    .home-content h4 {
+        font-size: 8vw;
+        align-content: center;
+    }
+
+    .home-content p {
+        font-size: 5vw;
+        align-content: center;
+    }
+
+    .home-content .start-btn {
+        width: 50%;
+        font-size: 5vw;
+    }
+
+    .popup-info {
+        padding: 5vw 5vw;
+    }
+
+    .popup-info .info {
+        font-size: 4vw;
+    }
+
+    .popup-info .btn-group .info-btn {
+        width: 30%;
+        font-size: 3vw;
+    }
+
+    .popup-info h5 {
+        font-size: 8vw;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    #quizForm {
+        padding: 10px;
+    }
+
+    #quizForm select, input[type="checkbox"], button {
+        width: 30%;
+        padding: 5px;
+    }
+
+    .consent-text p {
+        font-size: 4vw;
+    }
+
+    h6 {
+        font-size: 4vw;
+    }
+}
